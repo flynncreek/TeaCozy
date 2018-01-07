@@ -123,15 +123,34 @@ header nav span a {
   border: 1px solid white;
 }
 
-.featured-image-berryblitz {
+.featured-image {
   display: flex;
   width: 300px;
   height: 200px;
   border: 1px solid white;
-  background-image: url("../images/img-berryblitz.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
   background-size: cover;
+}
+
+.berryblitz.featured-image {
+  background-image: url("../images/img-berryblitz.jpg");
+}
+
+.spicedrum.featured-image {
+  background-image: url("../images/img-spiced-rum.jpg");
+}
+
+.donut.featured-image {
+  background-image: url("../images/img-donut.jpg");
+}
+
+.myrtle.featured-image {
+  background-image: url("../images/img-myrtle-ave.jpg");
+}
+
+.bedford.featured-image {
+  background-image: url("../images/img-bedford-bizarre.jpg");
 }
 
 .featured-text {
