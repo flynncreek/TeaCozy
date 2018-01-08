@@ -1,3 +1,10 @@
+/*
+Tea Cozy Project
+style.class
+Michael Seeman
+8-Jan-2018
+*/
+
 body {
   font-family: "Helvetica";
   font-size: 22px;
@@ -41,28 +48,32 @@ header nav span a {
   color: seashell;
 }
 
+/***** Content container for Mission, Features, Locations and Contact *****/
+
 .contents {
   display: flex;
   flex-direction: column;
   width: 1240px;
-  height: 1740px;
+  height: 2143px;
   margin-top: 69px;
+  align-items: center;
 }
+
+/***** Mission *****/
 
 .mission {
   display: flex;
   width: 1200px;
   height: 700px;
-  border: 1px solid white;
   margin: 0 auto;
   background-image: url("../images/img-mission-background.jpg");
-  /* background-repeat: no-repeat; */
   background-position: center center;
   background-size: auto auto;
   justify-content: center;
   align-items: center;
 }
 
+/* Banners for both Mission and Featured Items */
 .banner {
   display: flex;
   width: 1200px;
@@ -71,30 +82,37 @@ header nav span a {
   background-color: black;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid white;
 }
 
 .banner-headline {
   display: flex;
   align-items: center;
   height: auto;
-  /* border: 1px solid white; */
 }
 
 .banner-text {
   display: flex;
   align-items: center;
   height: auto;
-  /* border: 1px solid white; */
 }
+
+/***** Featured Items *****/
 
 .featured {
   display: flex;
   width: 1200px;
-  height: 641px;
+  height: 710px;
   flex-direction: column;
   align-items: center;
-  border: 1px solid white;
+  margin: 0 auto;
+}
+
+/* Obvious hack -- had trouble using margin to adjust
+   top and bottom margins */
+.space {
+  display: flex;
+  width: 1200px;
+  height: 50px;
   margin: 0 auto;
 }
 
@@ -103,7 +121,6 @@ header nav span a {
   width: 1000px;
   height: 250px;
   justify-content: space-between;
-  border: 1px solid white;
 }
 
 .featured-row-two {
@@ -111,7 +128,6 @@ header nav span a {
   width: 650px;
   height: 250px;
   justify-content: space-between;
-  border: 1px solid white;
 }
 
 .featured-item {
@@ -120,16 +136,12 @@ header nav span a {
   height: 250px;
   flex-direction: column;
   align-items: center;
-  border: 1px solid white;
 }
 
 .featured-image {
   display: flex;
   width: 300px;
   height: 200px;
-  border: 1px solid white;
-  /* background-repeat: no-repeat; */
-  /* background-position: center center; */
   background-size: cover;
 }
 
@@ -160,8 +172,9 @@ header nav span a {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  border: 1px solid white;
 }
+
+/***** Locations *****/
 
 .locations {
   display: flex;
@@ -169,7 +182,6 @@ header nav span a {
   width: 1200px;
   height: 500px;
   align-items: center;
-  border: 1px solid white;
   margin: 0 auto;
   background-image: url("../images/img-locations-background.jpg");
   background-position: center top;
@@ -184,7 +196,6 @@ header nav span a {
   align-items: center;
   margin-top: 52px;
   margin-bottom: 15px;
-  border: 1px solid white;
 }
 
 .locations-row {
@@ -192,7 +203,6 @@ header nav span a {
   width: 980px;
   height: 248px;
   justify-content: space-between;
-  border: 1px solid white;
 }
 
 .location {
@@ -203,7 +213,6 @@ header nav span a {
   justify-content: space-around;
   background-color: black;
   opacity: 1.0;
-  border: 1px solid white;
 }
 
 .location-line {
@@ -212,5 +221,34 @@ header nav span a {
   height: 32px;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+}
+
+/***** Contact Information *****/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 200px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.contact-line {
+  display: flex;
+  width: 1200px;
+  height: 33px;
+  justify-content: center;
+  align-items: center;
+}
+
+/***** Footer -- copyright info *****/
+
+.footer {
+  display: flex;
+  width: 1200px;
+  height: 22px;
+  justify-content: left;
+  align-items: center;
+  margin: 0 auto;
 }
